@@ -59,8 +59,9 @@ Partie Responsable:
 
 ---------------
 
-- Mot de passe haché
+Mot de passe haché
+BDD modifié (src\main\resources\BDD\autoecole.sql) -ajout d'une table compte -ajout d'une colonne codeCategorie dans lecon
 
-BDD modifié (src\main\resources\BDD\autoecole.sql)
--ajout d'une table compte 
--ajout d'une colonne codeCategorie dans lecon
+Le projet a été développé avec Java 21. Il peut ne pas fonctionner correctement avec d'autres versions de Java. Assurez-vous d'avoir installé la version 21 de JDK.
+
+Pour installer le projet, il faut installer intellij puis ouvrir le projet. Ensuite il faut mettre le connecteur qui se trouve ici : src\main\resources\lib\mysql-connector-java-8.0.30.jar Pour le mettre il suffit de faire clic droit sur la racine du projet, open module setting, appuyer sur la + pour add JARs or directories puis selectionner le connector. Ensuite il faut cocher le connector et appuer sur apply. Le connector est placé. Pour finir il faut changer le lien de connexion entre le code avec la base données. Il faut aller dans tools/ConnexionBDD et au niveau de la ligne 14 il faut changer autoecoleok par le nom de votre base de données. Le projet est prêt à être lancé.
